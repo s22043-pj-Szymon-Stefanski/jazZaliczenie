@@ -1,7 +1,7 @@
 package com.example.jaz22043nbp.Controller;
 
 import com.example.jaz22043nbp.Service.ZlotoService;
-import com.example.jaz22043nbp.ZlotoEntity.ZlotoModel;
+import com.example.jaz22043nbp.Entity.ZlotoModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

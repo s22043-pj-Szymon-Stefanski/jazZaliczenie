@@ -11,4 +11,5 @@ public class ZlotoClient {
         return restTemplate.getForObject("http://api.nbp.pl/api/cenyzlota/{startDate}/{endDate}",
                 String.class, startDate, endDate);
     }
+
 }
