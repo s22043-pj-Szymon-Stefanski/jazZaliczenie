@@ -3,8 +3,10 @@ package com.example.jaz22043nbp.Controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.HttpClientErrorException;
 
+@RestControllerAdvice
 public class ZlotoControllerAdvice {
     @ExceptionHandler(HttpClientErrorException.class)
     ResponseEntity<String> HandlerRuntimeException(HttpClientErrorException exception) {
