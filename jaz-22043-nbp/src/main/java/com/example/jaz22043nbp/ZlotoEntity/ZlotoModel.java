@@ -15,7 +15,7 @@ public class ZlotoModel {
     private String endDate;
     private Date date = new Date();
 
-    public ZlotoModel(String startDate, String endDate, Date date) {
+    public ZlotoModel(String startDate, String endDate,Date date) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.date = date;
