@@ -21,12 +21,12 @@ public class ZlotoService {
 
     public ZlotoModel getZloto(String startDate, String endDate) {;
         Date date = new Date();
-        float testCena = (float) 261.87;
+        double testCena = 261.87;
 
         String response = zlotoClient.getZlotoFor(startDate, endDate);
         log.info(response);
 
-        ZlotoModel zlotoModel = new ZlotoModel(startDate, endDate, testCena,date);
+        ZlotoModel zlotoModel = new ZlotoModel(startDate, endDate, testCena, date);
         return zlotoRepository.save(zlotoModel);
     }
 }

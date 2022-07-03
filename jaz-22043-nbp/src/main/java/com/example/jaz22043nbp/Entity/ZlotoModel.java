@@ -13,10 +13,10 @@ public class ZlotoModel {
     private long id;
     private String startDate;
     private String endDate;
-    private float cena;
+    private double cena;
     private Date date = new Date();
 
-    public ZlotoModel(String startDate, String endDate, float cena, Date date) {
+    public ZlotoModel(String startDate, String endDate, double cena, Date date) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.cena = cena;
@@ -39,7 +39,7 @@ public class ZlotoModel {
         return endDate;
     }
 
-    public float getCena() {
+    public double getCena() {
         return cena;
     }
 
