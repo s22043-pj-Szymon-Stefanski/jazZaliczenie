@@ -7,7 +7,7 @@ import org.springframework.web.client.HttpClientErrorException;
 
 public class ZlotoControllerAdvice {
     @ExceptionHandler(HttpClientErrorException.class)
-    ResponseEntity<String> HandlerRuntimeExecption(HttpClientErrorException exception) {
+    ResponseEntity<String> HandlerRuntimeException(HttpClientErrorException exception) {
         switch (exception.getStatusCode()){
             case INTERNAL_SERVER_ERROR :
                 return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Exception: 123" );
